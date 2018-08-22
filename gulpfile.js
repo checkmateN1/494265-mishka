@@ -1,18 +1,18 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var minify = require("gulp-csso");
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var run = require("run-sequence");
-var del = require("del");
+let gulp = require("gulp");
+let sass = require("gulp-sass");
+let plumber = require("gulp-plumber");
+let postcss = require("gulp-postcss");
+let autoprefixer = require("autoprefixer");
+let server = require("browser-sync").create();
+let minify = require("gulp-csso");
+let rename = require("gulp-rename");
+let imagemin = require("gulp-imagemin");
+let posthtml = require("gulp-posthtml");
+let include = require("posthtml-include");
+let run = require("run-sequence");
+let del = require("del");
 
 
 gulp.task("style", function() {
