@@ -1,0 +1,134 @@
+.promo {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  width: 320px;
+}
+
+.promo__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  color: $white;
+  min-height: 77px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  width: 292px;
+  padding-left: 28px;
+  padding-top: 25px;
+  position: relative;
+  font-weight: 700;
+}
+
+.promo__text {
+  width: 175px;
+}
+
+.promo__item--interior {
+  background-color: #63d1bb;
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+  }
+}
+
+.promo__item--interior:hover .promo__link::after,
+.promo__item--toys:hover .promo__link::after {
+  opacity: 0.7;
+}
+
+.promo__item--interior .promo__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 62px;
+  background: url("../img/icon-interior.svg") no-repeat;
+  top: 23px;
+  right: 35px;
+  opacity: 0.5;
+}
+
+.promo__item--toys {
+  background-color: #56c3b2;
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
+  }
+}
+
+.promo__item--toys .promo__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-toy.svg") no-repeat;
+  top: 21px;
+  right: 27px;
+  opacity: 0.5;
+}
+
+.promo__item--interior:active .promo__link,
+.promo__item--interior:active .promo__link::after,
+.promo__item--toys:active .promo__link,
+.promo__item--toys:active .promo__link::after {
+  opacity: 0.3;
+}
+
+.promo__item--toys:hover .promo__link::after {
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    display: flex;
+    width: 668px;
+  }
+
+  .promo__link {
+    width: 299px;
+    min-height: 103px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 27px;
+    padding-left: 35px;
+  }
+
+  .promo__item:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
+  }
+
+  .promo__item--interior .promo__link::after {
+    top: 29px;
+    right: 36px;
+  }
+
+  .promo__item--toys .promo__link::after {
+    top: 31px;
+    right: 34px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    width: 1150px;
+  }
+
+  .promo__link {
+    width: 490px;
+    min-height: 98px;
+    padding-left: 35px;
+  }
+}

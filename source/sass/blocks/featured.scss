@@ -1,0 +1,241 @@
+.featured {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  position: relative;
+}
+
+.featured::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.featured__header {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+
+  color: $black;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.featured__explanation {
+  margin-top: 5px;
+
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $mint-lighter;
+  font-weight: 700;
+}
+
+.featured__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-text;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+.featured__characteristics {
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 20px;
+  color: $color-text;
+  background-color: $white;
+}
+
+.featured__value {
+  width: 98px;
+
+  border-bottom: 1px solid $grey-border;
+}
+
+.featured__field {
+  width: 165px;
+  height: 38px;
+
+  border-bottom: 1px solid $grey-border;
+}
+
+.featured__image {
+  margin-top: 28px;
+}
+
+.featured__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text;
+  align-self: center;
+  margin-top: 19px;
+}
+
+.featured__button {
+  display: flex;
+  margin-top: 9px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .featured {
+    min-width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 49px;
+    padding-left: 49px;
+    padding-top: 31px;
+    padding-bottom: 41px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 20px;
+    background-position: 20px 100%;
+  }
+
+  .featured::after {
+    display: none;
+  }
+
+  .featured__header {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+    margin-left: -3px;
+    padding-top: 0;
+  }
+
+  .featured__explanation {
+    line-height: 17px;
+    width: 100px;
+    padding-top: 6px;
+    text-align: center;
+    padding-right: 13px;
+  }
+
+  .featured__description {
+    width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 34px;
+    margin-top: 38px;
+  }
+
+  .featured__block {
+    min-height: 450px;
+    flex-wrap: wrap;
+  }
+
+  .featured__image {
+    position: absolute;
+    width: 333px;
+    height: 404px;
+    top: 113px;
+    right: 51px;
+  }
+
+  .featured__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: -4px;
+  }
+
+  .featured__value {
+    width: 80px;
+  }
+
+  .featured__characteristics {
+    margin-bottom: 30px;
+  }
+
+  .featured__button {
+    width: 288px;
+    padding-left: 14px;
+    padding-right: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .featured {
+    flex-direction: row;
+    min-height: 637px;
+    padding-top: 108px;
+    padding-right: 0;
+    padding-bottom: 51px;
+    padding-left: 46px;
+    background-position: 27px 100%;
+    background-size: auto 21px;
+  }
+
+  .featured::after {
+    display: none;
+  }
+
+  .featured__header {
+    z-index: 1;
+    width: 933px;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 9px;
+  }
+
+  .featured__explanation {
+    line-height: 17px;
+    order: -1;
+    margin-top: 19px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .featured__block {
+    min-height: 530px;
+    padding-left: 179px;
+    padding-top: 31px;
+  }
+
+  .featured__image {
+    width: 525px;
+    height: 636px;
+    top: 37px;
+    right: 49px;
+  }
+
+  .featured__description {
+    margin-bottom: 46px;
+    margin-top: 8px;
+  }
+
+  .featured__list {
+    margin-bottom: 81px;
+  }
+
+  .featured__price {
+    margin-top: 78px;
+    margin-left: 0;
+  }
+
+  .featured__button {
+    margin-left: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
