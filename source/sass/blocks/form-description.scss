@@ -1,0 +1,32 @@
+.form-description {
+  background: white;
+  margin: auto;
+  width: 247px;
+  color: #444444;
+  padding-left: 29px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .form-description {
+    width: 668px;
+    padding: 0;
+    padding-top: 61px;
+    padding-bottom: 74px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form-description {
+    width: 700px;
+    padding-top: 121px;
+    padding-bottom: 73px;
+  }
+}
