@@ -10,11 +10,11 @@
   width: 320px;
 }
 
-.page-header__logo[href]:hover {
+.page-header__logo:hover {
   opacity: 0.6;
 }
 
-.page-header__logo[href]:active {
+.page-header__logo:active {
   opacity: 0.3;
 }
 
